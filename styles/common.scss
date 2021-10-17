@@ -1,0 +1,16 @@
+@import "./setup/mixins";
+@import "./setup/variables";
+
+@import "./setup/reset";
+@import "./setup/helpers";
+
+@import "./common/containers";
+@import "./common/buttons";
+@import "./common/titles";
+@import "./common/links";
+@import "./common/modal";
+
+@import "./modal/privacy";
+
+@import "./blocks/header";
+@import "./blocks/footer";
