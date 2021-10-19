@@ -1,14 +1,19 @@
 .title-1 {
-    font-size: $text-giant;
-    font-weight: bold;
+    font-size:  $family-title-1;
+    font-weight: 900;
 }
 
 .title-2 {
-    font-size: $text-huge;
-    font-weight: bold;
+    font-size:  $family-title-1;
+    font-weight: 900;
 }
 
 .title-3 {
-    font-size: $text-large;
-    font-weight: bold;
+    font-size: $family-title-2;
+    font-weight: 900;
+}
+
+.title-4 {
+    font-size: $family-title-2;
+    font-weight: 700;
 }
