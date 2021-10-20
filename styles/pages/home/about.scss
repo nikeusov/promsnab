@@ -1,71 +1,75 @@
-.about{
-    padding: 102px 0;
+.about {
+    padding: 50px 0;
 }
 
-.about__title{
+.about__title {
     color: $blue;
 }
 
-.title-line{
+.title-line {
     position: relative;
 }
 
-.title-line:after{
+.title-line:after {
     display: block;
     content: '';
     width: 114px;
     height: 1px;
-    margin: 19px 0 0;
+    margin: 30px 0 0;
     background: $gold;
 }
 
-.about__item{
+.about__item {
     display: flex;
     justify-content: space-between;
 }
 
-.about__item + .about__item{
-    margin-top: 102px;
+.about__item + .about__item {
+    margin-top: 40px;
 }
 
-.about__item:last-child{
+.about__item:last-child {
     flex-direction: row-reverse;
 }
 
-.about__item:last-child .about__item-img{
+.about__item:last-child .about__item-img {
     margin-right: -16px;
 }
 
-.about__item-right{
-    width: 60%;
-    padding: 54px;
+.about__item-right {
+    width: 100%;
+    padding: 30px;
     background: $light-gray-blue;
-    border-radius: 8px;
+    border-radius: $border-radius;
 }
 
-.about__item-left{
+.about__item-left {
+    display: none;
     width: 36%;
+    margin-right: 10px;
     text-align: right;
+    @include to-pad {
+        display: block;
+    }
 }
 
-.about__text{
-    margin-top: 32px;
+.about__text {
+    margin-top: 22px;
+    @include from-desktop {
+        margin-top: 32px;
+    }
 }
 
-.section-text{
+.section-text {
     line-height: 140%;
 }
 
-@media (min-width: 1600px) {
-    .about__item:last-child .about__item-img{
+@include desktop-large {
+    .about__item:last-child .about__item-img {
         margin-right: -20px;
     }
 
-    .title-2 {
-        font-size: $text-huge;
-    }
-
-    .section-text{
+    .section-text {
         font-size: $text-medium-maxi;
     }
 
@@ -75,5 +79,57 @@
 
     .about__item-right {
         width: 68.7%;
+    }
+}
+
+@include from-desktop {
+    .about__item-right {
+        width: 60%;
+    }
+
+    .about {
+        padding: 102px 0;
+    }
+
+    .about__item + .about__item {
+        margin-top: 102px;
+    }
+
+    .about__item-right {
+        padding: 53px 25px 53px 53px;
+    }
+}
+
+
+@include retina {
+    .about {
+        padding: 5rem 0;
+    }
+
+    .title-line:after {
+        width: 11.4rem;
+        height: 0.1rem;
+        margin: 3rem 0 0;
+    }
+
+    .about__item + .about__item {
+        margin-top: 4rem;
+    }
+
+    .about__item:last-child .about__item-img {
+        margin-right: -1.6rem;
+    }
+
+    .about__item-right {
+        padding: 3rem;
+        border-radius: 0.8rem;
+    }
+
+    .about__item-left {
+        margin-right: 1rem;
+    }
+
+    .about__text {
+        margin-top: 2.2rem;
     }
 }

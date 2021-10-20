@@ -1,13 +1,16 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+
 ::placeholder {
     color: $gray;
 }
+
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
 }
+
 html {
     height: 100%;
     min-width: $html-min-width;
@@ -21,32 +24,54 @@ html {
     line-height: 1.25;
     text-align: left;
     -webkit-text-size-adjust: 100%;
+    @include retina {
+        max-width: none;
+        font-size: 0.520836vw;
+    }
 }
+
+@include retina {
+    html {
+        max-width: none;
+        font-size: 0.520836vw;
+    }
+}
+
 body {
     height: 100%;
     margin: 0;
+    @include retina {
+        max-width: none;
+        font-size: $text-medium-maxi;
+    }
 }
+
 p {
     margin: 0;
 }
+
 a {
     color: inherit;
     text-decoration: none;
 }
+
 ol, ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 dl, dd {
     margin: 0;
 }
+
 fieldset,
 legend {
     margin: 0;
     padding: 0;
     border: none;
 }
+
 button,
 input,
 optgroup,
@@ -60,15 +85,18 @@ textarea {
     border-radius: 0;
     padding: 0;
 }
+
 button {
     border: none;
     background: none;
     cursor: pointer;
 }
+
 input {
     border: none;
     background: none;
 }
+
 input[type=number] {
     &::-webkit-inner-spin-button,
     &::-webkit-outer-spin-button {
@@ -76,18 +104,23 @@ input[type=number] {
         margin: 0;
     }
 }
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+
 table {
     border-collapse: collapse;
 }
+
 caption {
     text-align: inherit;
 }
+
 figure {
     margin: 0;
 }
+
 img {
     max-width: 100%;
 }

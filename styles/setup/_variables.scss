@@ -1,6 +1,8 @@
 /* Breakpoints */
+$pad-width: 768px;
 $desktop-width: 1140px;
 $desktop-large-width: 1600px;
+$retina-width: 1921px;
 
 /* Sizes */
 $html-min-width: 500px;
@@ -15,12 +17,14 @@ $container-desktop-large-width: 1560px;
 $white: #fff;
 $black: #1B1E2C;
 $dark-blue: #0B1C56;
+$dark-blue2: #102A83;
 $blue: #2148D2;
 $light-blue: #0276FF;
 $gold: #F4CC7E;
 $gray-blue: #E2E8F1;
 $light-gray-blue: #F1F5FB;
 $gray: #6c7177;
+$dark-gray: #5C5C5C;
 
 /* Font Family */
 $text-helper: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

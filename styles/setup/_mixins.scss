@@ -1,15 +1,29 @@
+@mixin to-pad {
+    @media (min-width: $pad-width) {
+        @content;
+    }
+}
+
 @mixin to-desktop {
     @media (max-width: $desktop-width - 1px) {
         @content;
     }
 }
+
 @mixin from-desktop {
     @media (min-width: $desktop-width) {
         @content;
     }
 }
+
 @mixin desktop-large {
     @media (min-width: $desktop-large-width) {
+        @content;
+    }
+}
+
+@mixin retina {
+    @media (min-width: $retina-width) {
         @content;
     }
 }

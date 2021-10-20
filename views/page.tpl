@@ -74,8 +74,9 @@
         }
     </style>
 
-    {$vendor_styles}
+
     {$common_styles}
+    {$vendor_styles}
 
     {if !empty($page->styles)}
         {$page->styles}
@@ -127,6 +128,7 @@
 
 {$vendor_scripts}
 {$common_scripts}
+
 {if !empty($model->script)}
     {$model->script}
 {/if}
