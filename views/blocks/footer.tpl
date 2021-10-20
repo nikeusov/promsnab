@@ -1,5 +1,5 @@
 <footer class="footer">
     <div class="footer__container container">
-        Это подвал
+        <img src="/img/svg/logo.svg" alt="logo">
     </div>
 </footer>

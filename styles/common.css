@@ -26,8 +26,9 @@ html {
   margin: 0 auto;
   color: #1B1E2C;
   background-color: #fff;
-  font-family: Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 22px;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 1.25;
   text-align: left;
   -webkit-text-size-adjust: 100%;
@@ -153,22 +154,30 @@ img {
 }
 
 .title-1 {
-  font-size: "Gilroy-Heavy", sans-serif;
+  font-family: "Gilroy-Heavy", sans-serif;
+  font-size: 64px;
   font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .title-2 {
-  font-size: "Gilroy-Heavy", sans-serif;
+  font-family: "Gilroy-Heavy", sans-serif;
+  font-size: 36px;
   font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .title-3 {
-  font-size: "Gilroy", sans-serif;
+  font-family: "Gilroy", sans-serif;
+  font-size: 36px;
   font-weight: 900;
 }
 
 .title-4 {
-  font-size: "Gilroy", sans-serif;
+  font-family: "Gilroy", sans-serif;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -344,6 +353,14 @@ img {
 }
 
 .header {
+  padding: 45px 0;
+  background: #0B1C56;
+  color: #fff;
+}
+
+.footer {
+  padding: 45px 0;
+  min-height: 300px;
   background: #0B1C56;
   color: #fff;
 }

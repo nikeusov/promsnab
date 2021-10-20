@@ -1,19 +1,27 @@
 .title-1 {
-    font-size:  $family-title-1;
+    font-family: $family-title-1;
+    font-size:  $text-giant;
     font-weight: 900;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 }
 
 .title-2 {
-    font-size:  $family-title-1;
+    font-family: $family-title-1;
+    font-size:  $text-large;
     font-weight: 900;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 }
 
 .title-3 {
-    font-size: $family-title-2;
+    font-family: $family-title-2;
+    font-size: $text-large;
     font-weight: 900;
 }
 
 .title-4 {
-    font-size: $family-title-2;
+    font-family: $family-title-2;
+    font-size: $text-medium-maxi;
     font-weight: 700;
 }

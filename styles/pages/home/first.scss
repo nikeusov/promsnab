@@ -1,7 +1,18 @@
 .first {
+    padding: 76px 0;
     background: $black;
 }
 
 .first__title {
+    margin-bottom: 26px;
+    max-width: 725px;
     color: $gold;
+}
+
+.first__text{
+    margin-bottom: 79px;
+    max-width: 570px;
+    font-size: 28px;
+    line-height: 140%;
+    color: $white;
 }
