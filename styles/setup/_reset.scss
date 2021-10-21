@@ -24,26 +24,12 @@ html {
     line-height: 1.25;
     text-align: left;
     -webkit-text-size-adjust: 100%;
-    @include retina {
-        max-width: none;
-        font-size: 0.520836vw;
-    }
-}
-
-@include retina {
-    html {
-        max-width: none;
-        font-size: 0.520836vw;
-    }
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
     height: 100%;
     margin: 0;
-    @include retina {
-        max-width: none;
-        font-size: $text-medium-maxi;
-    }
 }
 
 p {

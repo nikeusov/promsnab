@@ -72,6 +72,15 @@
             src: url('/fonts/Manrope-Regular.woff2') format('woff2'),
             url('../fonts/Manrope-Regular.woff') format('woff');
         }
+
+        @font-face {
+            font-family: 'Manrope';
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+            src: url('/fonts/Manrope-Medium.woff2') format('woff2'),
+            url('../fonts/Manrope-Medium.woff') format('woff');
+        }
     </style>
 
 
@@ -105,6 +114,8 @@
                     "telephone": "{$phone->title}"
                 }
             }
+
+
 
     </script>
 

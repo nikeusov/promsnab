@@ -99,37 +99,3 @@
         padding: 53px 25px 53px 53px;
     }
 }
-
-
-@include retina {
-    .about {
-        padding: 5rem 0;
-    }
-
-    .title-line:after {
-        width: 11.4rem;
-        height: 0.1rem;
-        margin: 3rem 0 0;
-    }
-
-    .about__item + .about__item {
-        margin-top: 4rem;
-    }
-
-    .about__item:last-child .about__item-img {
-        margin-right: -1.6rem;
-    }
-
-    .about__item-right {
-        padding: 3rem;
-        border-radius: 0.8rem;
-    }
-
-    .about__item-left {
-        margin-right: 1rem;
-    }
-
-    .about__text {
-        margin-top: 2.2rem;
-    }
-}

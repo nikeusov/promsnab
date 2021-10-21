@@ -21,9 +21,3 @@
         @content;
     }
 }
-
-@mixin retina {
-    @media (min-width: $retina-width) {
-        @content;
-    }
-}

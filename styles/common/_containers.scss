@@ -11,8 +11,4 @@
     @include desktop-large {
         width: $container-desktop-large-width;
     }
-
-    @include retina {
-        width: 156rem;
-    }
 }

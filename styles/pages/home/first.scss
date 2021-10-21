@@ -17,18 +17,20 @@
 }
 
 .first__img {
-    display: none;
     position: absolute;
     z-index: 1;
     top: 0;
     right: 0;
-    width: 900px;
+    width: 588px;
     height: auto;
     @include desktop-large {
         width: 759px;
     }
     @include from-desktop {
-        display: block;
+        width: 900px;
+    }
+    @include to-pad {
+        width: 660px;
     }
 }
 
@@ -130,11 +132,11 @@
     fill: $light-blue;
 }
 
-.first__button{
+.first__button {
     margin-right: 77px;
 }
 
-.first__wr{
+.first__wr {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -144,53 +146,39 @@
     }
 }
 
-.first__badge-wr{
-    display: flex;
+.first__badge-wr {
+    display: none;
     margin-top: 40px;
     @include desktop-large {
         margin-top: auto;
     }
+    @include from-desktop {
+        display: flex;
+    }
 }
 
-.first__badge{
+.first__badge {
     position: relative;
     width: 191px;
     margin-bottom: -38px;
 }
 
-.first__badge-laurel{
+.first__badge-laurel {
     width: 100%;
     height: 100%;
 }
 
-.first__badge-img{
+.first__badge-img {
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.first__badge-img{
+.first__badge-img {
     width: 107px;
 }
 
-.first__badge + .first__badge{
+.first__badge + .first__badge {
     margin-left: 64px;
-}
-
-@include retina {
-    .first {
-        padding: 7.5rem 0 10rem;
-    }
-
-    .first__title {
-        margin-bottom: 2.6rem;
-        max-width: 72.5rem;
-    }
-
-    .first__text {
-        margin-bottom: 1rem;
-        max-width: 57rem;
-        font-size: 2.8rem;
-    }
 }
