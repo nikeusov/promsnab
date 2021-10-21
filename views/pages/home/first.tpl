@@ -19,13 +19,15 @@
         <p class="first__text">Комплектующие теплотрасс, фасонные изделия</p>
         <div class="first__wr">
             <button class="first__button btn">Оставить заявку</button>
-            <div class="first__badge first__badge-1">
-                <img class="first__badge-laurel" src="/img/laurel.png" alt="laurel">
-                <img class="first__badge-img" src="/img/made-kuban.png" alt="badge">
-            </div>
-            <div class="first__badge first__badge-2">
-                <img class="first__badge-laurel" src="/img/laurel.png" alt="laurel">
-                <img class="first__badge-img" src="/img/badge.png" alt="badge">
+            <div class="first__badge-wr">
+                <div class="first__badge first__badge-1">
+                    <img class="first__badge-laurel" src="/img/laurel.png" alt="laurel">
+                    <img class="first__badge-img" src="/img/made-kuban.png" alt="badge">
+                </div>
+                <div class="first__badge first__badge-2">
+                    <img class="first__badge-laurel" src="/img/laurel.png" alt="laurel">
+                    <img class="first__badge-img" src="/img/badge.png" alt="badge">
+                </div>
             </div>
         </div>
     </div>

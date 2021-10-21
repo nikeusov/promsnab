@@ -3,18 +3,33 @@
     z-index: 0;
     padding: 75px 0 100px;
     background-color: $black;
-    background-position: 64% 50%;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    @include desktop-large {
+        background-position: 64% 50%;
+    }
+    @include from-desktop {
+        background-position: -360% 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
 
 .first__img {
+    display: none;
     position: absolute;
     z-index: 1;
     top: 0;
     right: 0;
-    width: 759px;
+    width: 900px;
     height: auto;
+    @include desktop-large {
+        width: 759px;
+    }
+    @include from-desktop {
+        display: block;
+    }
 }
 
 .first__container {
@@ -37,15 +52,22 @@
 }
 
 .ad {
+    display: none;
     position: absolute;
     z-index: 3;
-    top: 54%;
+    top: 82%;
     right: 0;
     width: 530px;
     padding: 35px 40px 35px 47px;
     background: rgba(255, 255, 255, 0.7);
     border-radius: $border-radius;
     transform: translateY(-50%);
+    @include desktop-large {
+        top: 54%;
+    }
+    @include from-desktop {
+        display: block;
+    }
 }
 
 .ad__title {
@@ -114,13 +136,25 @@
 
 .first__wr{
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+    @include desktop-large {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}
+
+.first__badge-wr{
+    display: flex;
+    margin-top: 40px;
+    @include desktop-large {
+        margin-top: auto;
+    }
 }
 
 .first__badge{
     position: relative;
     width: 191px;
-    height: 174px;
     margin-bottom: -38px;
 }
 
@@ -136,14 +170,8 @@
     transform: translate(-50%, -50%);
 }
 
-.first__badge-1 .first__badge-img{
+.first__badge-img{
     width: 107px;
-    height: 108px;
-}
-
-.first__badge-1 .first__badge-img{
-    width: 107px;
-    height: 108px;
 }
 
 .first__badge + .first__badge{
